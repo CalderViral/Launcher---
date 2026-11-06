@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MajesticLauncher — официальный лаунчер</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #e0e0e0;
+      --accent: #a84fff;
+      --gold: #ffd700;
+      --success: #00e680;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h1 {
+      color: var(--gold);
+      margin: 0 0 0.5rem;
+    }
+    p.tagline {
+      color: #aaaaaa;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .actions {
+      margin-top: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 4px 12px rgba(168, 79, 255, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(168, 79, 255, 0.4);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 1rem;
+    }
+    .feature-card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+    }
+    .feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .tech-stack {
+      background: #0d0d0d;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+    }
+    .tech-tag {
+      background: #2a2a2a;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    footer {
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #222;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MajesticLauncher</h1>
+    <p class="tagline">Официальный лаунчер для RAGE MP сервера. Быстрый старт, новости, онлайн и удобный интерфейс.</p>
+    <div class="actions">
+      <!-- 🔴 ЗАМЕНИ на свой репозиторий -->
+      <a href="https://github.com/CalderViral/Launcher---" class="btn btn-primary">Скачать лаунчер (.exe)</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <article class="feature-card">
+      <div class="feature-icon">🚀</div>
+      <h3>Быстрый запуск</h3>
+      <p>Автоматически проверяет Steam и RAGE MP, запускает игру в один клик.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Онлайн сервера</h3>
+      <p>Показывает актуальный онлайн из мастерлиста RAGE MP в реальном времени.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon">📢</div>
+      <h3>Новости внутри лаунчера</h3>
+      <p>Карточки новостей с картинками и ссылками на форум и Discord.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon">💾</div>
+      <h3>Сохранение настроек</h3>
+      <p>Пути к играм, IP и другие настройки сохраняются в launcher_config.json.</p>
+    </article>
+  </section>
+
+  <section class="tech-stack">
+    <h2>На чём собран</h2>
+    <p>Современный стек для стабильной работы и удобной доработки.</p>
+    <div class="tech-list">
+      <span class="tech-tag">Python 3.x</span>
+      <span class="tech-tag">CustomTkinter</span>
+      <span class="tech-tag">Pillow (PIL)</span>
+      <span class="tech-tag">PyInstaller</span>
+      <span class="tech-tag">JSON</span>
+    </div>
+  </section>
+
+  <footer>
+    <!-- 🔴 ЗАМЕНИ ссылки -->
+    <a href="https://discord.gg/твоя-ссылка" style="color:var(--accent)">Discord</a> •
+    <a href="https://vk.com/твоя-группа" style="color:#0077ff">VK</a> •
+    <span>© MajesticLauncher 2026</span>
+  </footer>
+</body>
+</html>
